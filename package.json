@@ -1,0 +1,44 @@
+{
+  "name": "low-access-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "./apps/*",
+    "./packages/*"
+  ],
+  "scripts": {
+    "web": "cd apps/expo && yarn web",
+    "desktop": "cd apps/tauri && yarn tauri:dev",
+    "ios": "cd apps/expo && yarn ios",
+    "android": "cd apps/expo && yarn android",
+    "prebuild": "cd apps/expo && yarn prebuild",
+    "build:web": "cd apps/expo && yarn build:web",
+    "build:desktop": "cd apps/tauri && yarn tauri:build",
+    "build:ios": "cd apps/expo && yarn build:ios",
+    "build:android": "cd apps/expo && yarn build:android",
+    "build:all": "yarn build:web && yarn build:desktop && yarn build:ios && yarn build:android",
+    "clean": "yarn workspaces foreach --all run clean && rm -rf node_modules .yarn/cache .yarn/install-state.gz",
+    "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
+    "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary",
+    "check-tamagui": "tamagui check"
+  },
+  "resolutions": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-refresh": "^0.14.0",
+    "react-native-svg": "15.11.2",
+    "react-native-web": "~0.19.12"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.6",
+    "@tamagui/cli": "^1.132.18",
+    "eslint": "^9.3.0",
+    "prettier": "^3.3.3",
+    "typescript": "~5.8.3"
+  },
+  "packageManager": "yarn@4.5.0",
+  "engines": {
+    "node": "22",
+    "npm": "10.8"
+  }
+}

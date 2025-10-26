@@ -1,0 +1,82 @@
+# Dependencies
+**/node_modules
+.yarn/
+
+# Build output
+**/dist/
+**/build/
+**/types/
+**/.tamagui/
+**/target/
+
+# Expo
+**/.expo/
+**/ios/
+**/android/
+expo-env.d.ts
+*.jsbundle
+web-build/
+
+# Tauri
+**/gen/schemas
+
+# Mobile (iOS)
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+**/Pods/
+
+# Mobile (Android)
+.gradle
+local.properties
+*.iml
+*.hprof
+*.apk
+*.aab
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# Fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+tsconfig.json
+tsconfig.base.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+thumbs.db
+THUMBS_DB

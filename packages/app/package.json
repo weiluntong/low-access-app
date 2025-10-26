@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "main": "index.ts",
+  "private": true,
+  "sideEffects": [
+    "*.css"
+  ],
+  "dependencies": {
+    "@low-access/ui": "workspace:*",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@tamagui/toast": "^1.132.18"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "@types/react-native": "^0.73.0"
+  }
+}

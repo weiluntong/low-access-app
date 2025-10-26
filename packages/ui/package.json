@@ -1,0 +1,28 @@
+{
+  "name": "@low-access/ui",
+  "private": true,
+  "sideEffects": [
+    "*.css"
+  ],
+  "types": "./src",
+  "main": "src/index.tsx",
+  "module:jsx": "src",
+  "files": [
+    "types",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tamagui-build --skip-types",
+    "watch": "tamagui-build --skip-types --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@low-access/config": "workspace:*",
+    "@tamagui/toast": "^1.132.18",
+    "app": "workspace:*",
+    "tamagui": "^1.132.18"
+  },
+  "devDependencies": {
+    "@tamagui/build": "^1.132.18"
+  }
+}
