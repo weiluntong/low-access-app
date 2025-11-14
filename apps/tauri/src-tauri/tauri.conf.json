@@ -3,10 +3,10 @@
   "productName": "LOW Access",
   "identifier": "low.access.desktop",
   "build": {
-    "beforeDevCommand": "cd /home/weilunt/sso/frontend/apps/expo && yarn web",
+    "beforeDevCommand": "cd ../expo && yarn web",
     "devUrl": "http://localhost:8081",
-    "beforeBuildCommand": "cd /home/weilunt/sso/frontend/apps/expo && yarn build:web",
-    "frontendDist": "../../expo/dist"
+    "beforeBuildCommand": "cd ../expo && yarn build:web",
+    "frontendDist": "../expo/dist"
   },
   "app": {
     "windows": [
