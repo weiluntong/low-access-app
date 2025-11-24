@@ -6,7 +6,7 @@ export const AUTH_CONFIG = {
   googleClientId: '699013215587-keu4ptegcvp29456ucc0eed1dd6u2cg9.apps.googleusercontent.com',
   
   // Backend URL
-  backendUrl: 'http://localhost:3000',
+  backendUrl: 'http://access.leagueofwinners.qzz.io',
   
   // OAuth scopes to request
   scopes: ['openid', 'email', 'profile'] as string[],
