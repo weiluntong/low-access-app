@@ -6,7 +6,7 @@
     "beforeDevCommand": "cd ../expo && yarn web",
     "devUrl": "http://localhost:8081",
     "beforeBuildCommand": "cd ../expo && yarn build:web",
-    "frontendDist": "../expo/dist"
+    "frontendDist": "../../expo/dist"
   },
   "app": {
     "windows": [
